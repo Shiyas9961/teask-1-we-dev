@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --bg-color : #00246B;
+    --bg-color2 : #1995AD;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: whitesmoke;
+}
+header h1 a{
+    color: chartreuse;
+}
+header h1{
+    transition-duration: 0.1s;
+    font-weight: 600;
+}
+header h1:hover{
+    transform: scale(1.1);
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+header nav ul li{
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    border-radius: 4px;
+}
+header nav ul li:hover{
+    background-color: whitesmoke;
+}
+header nav ul li a:hover{
+    color: black;
+}
+.main-desc{
+    color: chartreuse;
+}
+.summery-sec{
+    padding: 20px;
+    padding-top: 10px;
+    background-color: var(--bg-color2);
+    color: whitesmoke;
+    position: relative;
+}
+.summery-sec h1{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.management-sec{
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: whitesmoke;
+}
+.management-sec h1{
+    text-align: center;
+    padding: 10px 0px 40px 0px ;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.person-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.first-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.second-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.each-person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+}
+.person-icon a{
+    color: black;
+}
+.each-person:hover{
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.02);
+}
+.inside-each--person{
+    width: 220px;
+}
+.each-person img{
+    width: 100%;
+}
+.person-desc{
+    text-align: center;
+}
+.person-desc-head{
+    font-weight: bold;
+}
+.development-sec{
+    padding: 20px;
+    background-color: var(--bg-color2);
+}
+.development-sec h1{
+    text-align: center;
+    padding: 10px 0px 40px 0px ;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.development-sec .person-sec .second-sec{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sales-sec{
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: whitesmoke;
+}
+.sales-sec h1{
+    text-align: center;
+    padding: 10px 0px 40px 0px ;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.sales-sec .person-sec .second-sec{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+footer{
+    padding: 20px;
+    background-color: var(--bg-color2);
+    text-align: center;
+}
+.person-icon{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    font-size: 1.7rem;
+}
+@media only screen and (max-width : 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .first-sec{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .second-sec{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width : 568px) {
+    .first-sec{
+        gap: 10px;
+    }
+    .second-sec{
+        gap: 10px;
+    }
+    .management-sec .person-sec{
+        gap: 10px;
+    }
+    .development-sec .person-sec{
+        gap: 10px;
+    }
+    .second-sec .person-sec{
+        gap: 10px;
+    }
+    header nav ul li{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .summery-sec h1{
+        font-size: 1.7rem;
+        padding: 5px;
+    }
+    .summery-sec p{
+        font-size: 0.9rem;
+    }
+    .management-sec h1{
+        font-size: 1.7rem;
+        padding: 5px;
+    }
+    .development-sec h1{
+        font-size: 1.7rem;
+        padding: 5px;
+    }
+    .sales-sec h1{
+        font-size: 1.7rem;
+        padding: 5px;
+    }
+    .inside-each--person{
+        width: 180px;
+    }
+    .person-icon{
+        font-size: 1.3rem;
+        gap: 10px;
+    }
+}
